@@ -1,0 +1,172 @@
+/*projects */
+
+/*tittle */
+
+.title-text {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(#000000, .6);
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    width: 20rem;
+    border: 3px solid #e6af2e;
+    margin: 0 auto;
+}
+
+.features-property .title-text {
+    color: #191716;
+}
+
+#features-box {
+    width: 112rem !important;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+    .feature-property {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 4;
+    }
+    .feature-service {
+        grid-row: 1 / span 1;
+        grid-column: 6 / span 4;
+    }
+    &__item {
+        overflow: hidden;
+        position: relative;
+        transition: all .5s;
+        .img-bcgd {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        }
+        svg {
+            font-size: 60px;
+            margin-bottom: 30px;
+            color: #e6af2e;
+        }
+        .front-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            transition: transform .5s;
+            z-index: 1;
+        }
+        .back-text {
+            position: absolute;
+            bottom: -21rem;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            height: 100%;
+            transition: bottom .5s;
+            padding: 30px 0;
+            z-index: 1;
+        }
+        .back-text h1 {
+            margin-bottom: 20px;
+        }
+        .back-text button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #e6af2e;
+            font-size: 20px;
+            color: #e6af2e;
+        }
+        .back-text button:hover {
+            background-color: #e6af2e;
+            color: #191716;
+        }
+        &:hover .front-text {
+            transform: translate(-50%, -200px);
+        }
+        &:hover .back-text {
+            bottom: 0;
+        }
+        &:hover .gallery__img {
+            transform: scale(1.1);
+        }
+        &:hover .img-bcgd {
+            background: transparent;
+            background-blend-mode: screen;
+        }
+        &--1 {
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 2;
+        }
+        &--2 {
+            grid-row: 2 / span 3;
+            grid-column: 3 / span 2;
+        }
+        &--3 {
+            grid-row: 2 / span 2;
+            grid-column: 6 / 7;
+        }
+        &--4 {
+            grid-row: 2 / span 2;
+            grid-column: 7 / -1;
+        }
+        &--5 {
+            grid-row: 4 / span 3;
+            grid-column: 1 / span 2;
+        }
+        &--6 {
+            grid-row: 5 / span 2;
+            grid-column: 3 / span 2;
+        }
+        &--7 {
+            grid-row: 5 / 5;
+            grid-column: 5 / 6;
+        }
+        &--8 {
+            grid-row: 4 / span 2;
+            grid-column: 6 / span 2;
+        }
+        &--9 {
+            grid-row: 4 / span 3;
+            grid-column: 8 / -1;
+        }
+        &--10 {
+            grid-row: 7 / span 2;
+            grid-column: 1 / 2;
+        }
+        &--11 {
+            grid-row: 7 / span 2;
+            grid-column: 2 / span 2;
+        }
+        &--12 {
+            grid-row: 7 / span 2;
+            grid-column: 4 / 5;
+        }
+        &--13 {
+            grid-row: 6 / span 3;
+            grid-column: 6 / span 2;
+        }
+        &--14 {
+            grid-row: 7 / span 2;
+            grid-column: 8 / -1;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform .5s;
+    }
+}

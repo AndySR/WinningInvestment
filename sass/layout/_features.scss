@@ -1,0 +1,42 @@
+/*skills section*/
+
+#features {
+    max-height: 20vh; // background-color: white;
+    // width: 112rem;
+    background: white;
+    margin: 0 auto;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.features-item {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.features-item svg {
+    font-size: 5rem !important;
+    color: #191716;
+    letter-spacing: 1px;
+}
+
+.features-item h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: .5rem 0;
+    color: #394043;
+    text-transform: uppercase;
+}
+
+.features-item p {
+    width: 75%;
+    font-size: 1rem;
+    margin: 0 auto;
+    color: #b0b3b4;
+}

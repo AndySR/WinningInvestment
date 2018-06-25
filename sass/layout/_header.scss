@@ -1,0 +1,221 @@
+/*################header####################*/
+
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: $color-grey-light-1;
+    box-shadow: $shadow-dark;
+    min-height: 30vh;
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    background-image: linear-gradient( to right bottom, rgba($color-grey-dark-1, 0.5), rgba($color-grey-dark-1, 0.4)), url(../img/hero.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    min-height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    font-size: 1.4rem;
+    height: 7rem;
+    background: transparent;
+    border-bottom: $line;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+////////////////////////////////////////
+// LOGO
+.logo {
+    height: 20rem;
+    margin: 2rem;
+}
+
+////////////////////////////////////////
+// USER NAVIGATION
+.user-nav {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &>* {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &>*:hover {
+        // background-color: $color-grey-light-2;
+        border-bottom: .5rem solid $color-primary;
+    }
+    &__icon-box {
+        position: relative;
+    }
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: $color-grey-light-1;
+    }
+    &__notification {
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+}
+
+#banner {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .banner-text {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+}
+
+.banner-text h1 {
+    text-transform: uppercase;
+    color: #ffc914;
+    font-size: 60px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.banner-text h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #d9e5d6;
+}
+
+.banner-text a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 10px;
+    color: #ffc914;
+    border: 3px solid #ffc914;
+    background: transparent;
+    transition: color 2s ease, background 2s ease;
+}
+
+.banner-text a:hover {
+    color: #2e282e;
+    background: #ffc914;
+}
+
+.search-container {
+    display: flex;
+    width: 70%;
+    padding-left: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.banner-property {
+    list-style: none;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    :not(:last-child) {
+        margin-right: 2rem;
+    }
+    li {
+        display: inline-block;
+        height: 3rem;
+        transition: all .5s;
+        a {
+            color: currentColor;
+            text-decoration: none;
+            display: inline-block;
+        }
+        &:hover {
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+}
+
+////////////////////////////////////////
+// SEARCH
+.search {
+    flex: 1 0 100%;
+    display: flex;
+    width: 90%;
+    &__input {
+        font-family: inherit;
+        font-size: 1.5rem;
+        color: inherit;
+        background-color: #f2eaea;
+        border: none;
+        padding: 1.5rem 2rem;
+        padding-right: 0;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: $color-grey-light-3;
+        }
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: color-grey-light-4;
+        }
+    }
+    &__input:focus+&__button {
+        background-color: green;
+        padding: 2rem 4rem;
+    }
+    &__button {
+        border: none;
+        background-color: #00ae66;
+        padding: 2rem;
+        transition: all .5s;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: white;
+    }
+}

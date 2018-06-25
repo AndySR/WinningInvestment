@@ -1,0 +1,389 @@
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td,
+th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fix-right-v3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+}
+
+.fix-right-v3 table,
+.fix-right-v3 td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.fix-right-v3 table {
+    width: 100%;
+    height: 100%;
+}
+
+.fix-right-v3 .sidebar-item {
+    position: relative;
+    margin: 7px 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.fix-right-v3 .mycart>a {
+    height: 38px;
+    line-height: 38px;
+    background-position: -38px -421px;
+}
+
+.fix-right-v3 .sidebar-item>a {
+    display: block;
+    width: 38px;
+    font-size: 0;
+    color: black;
+    overflow: hidden;
+    cursor: pointer;
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    &:hover .mycart .popup {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.fix-right-v3 .mycart .popup {
+    padding: 15px 25px 25px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid #f5f5f6;
+    width: 300px;
+    background: #fff;
+    color: #616669;
+    z-index: 100;
+}
+
+.fix-right-v3 .sidebar-item .popup {
+    position: absolute;
+    right: 48px;
+    top: 0;
+    display: none;
+    padding: 0 14px;
+    color: #fff;
+    font-size: 12px;
+    background: #00ae66;
+    white-space: nowrap;
+}
+
+.fix-right-v3 .mycart .popup i {
+    border-color: transparent transparent transparent #fff;
+    top: 18px;
+}
+
+.fix-right-v3 .sidebar-item .popup i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin: -5px -10px 0 0;
+    font-size: 0;
+    border: 5px solid;
+    border-color: transparent transparent transparent #00ae66;
+    overflow: hidden;
+}
+
+.fix-right-v3 .mycart .popup .head-line {
+    color: #d0d1d2;
+    line-height: 18px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+.fix-right-v3 .mycart .popup .head-line .title a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #394043;
+}
+
+.fix-right-v3 .mycart .popup .head-line .explain {
+    margin-left: 15px;
+    line-height: 18px;
+}
+
+.fix-right-v3 .mycart .popup .head-line .explain a {
+    color: #d0d1d2;
+}
+
+.fix-right-v3 .mycart .popup .zones {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 306px;
+    margin-bottom: 13px;
+}
+
+.hide {
+    display: none;
+}
+
+.fix-right-v3 .mycart .popup .zone-loading {
+    text-align: center;
+}
+
+.fix-right-v3 .mycart .popup .book-btn {
+    color: #fff;
+    background: #00ae66;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 45px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.fix-right-v3 .mycart .popup .book-btn a {
+    color: #fff;
+    display: block;
+}
+
+.fix-right-v3 .mycart .popup .empty-cart,
+.fix-right-v3 .mycart .popup .failed-cart,
+.fix-right-v3 .mycart .popup .loading {
+    color: #969696;
+    font-size: 17px;
+    text-align: center;
+}
+
+.fix-right-v3 .mycart .popup .empty-cart .no-log-empty-img,
+.fix-right-v3 .mycart .popup .failed-cart .no-log-empty-img,
+.fix-right-v3 .mycart .popup .loading .no-log-empty-img {
+    margin: 40px auto 30px;
+    width: 76px;
+    height: 94px;
+    background-image: url(ershoufang/sellDetail/img/no_log_empty_cart.png);
+    background-image: -webkit-image-set(url(ershoufang/sellDetail/img/no_log_empty_cart.png) 1x, url(ershoufang/sellDetail/img/no_log_empty_cart@2x.png) 2x);
+    background-repeat: no-repeat;
+}
+
+.fix-right-v3 .mycart .popup .empty-cart .msg,
+.fix-right-v3 .mycart .popup .failed-cart .msg,
+.fix-right-v3 .mycart .popup .loading .msg {
+    line-height: 17px;
+    margin-bottom: 30px;
+}
+
+.fix-right-v3 .mycart .popup .empty-cart .log-in-btn,
+.fix-right-v3 .mycart .popup .failed-cart .log-in-btn,
+.fix-right-v3 .mycart .popup .loading .log-in-btn,
+.fix-right-v3 .mycart .popup .empty-cart .link-btn,
+.fix-right-v3 .mycart .popup .failed-cart .link-btn,
+.fix-right-v3 .mycart .popup .loading .link-btn {
+    color: #394043;
+    background: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.fix-right-v3 .mycart .popup .empty-cart .log-in-btn i,
+.fix-right-v3 .mycart .popup .failed-cart .log-in-btn i,
+.fix-right-v3 .mycart .popup .loading .log-in-btn i,
+.fix-right-v3 .mycart .popup .empty-cart .link-btn i,
+.fix-right-v3 .mycart .popup .failed-cart .link-btn i,
+.fix-right-v3 .mycart .popup .loading .link-btn i {
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    margin-left: 10px;
+    border: 0;
+    position: static;
+    background-image: url(ershoufang/sellDetail/img/ar.png);
+    background-image: -webkit-image-set(url(ershoufang/sellDetail/img/ar.png) 1x, url(ershoufang/sellDetail/img/ar@2x.png) 2x);
+    background-repeat: no-repeat;
+}
+
+.fix-right-v3 .mycart .popup i {
+    border-color: transparent transparent transparent #fff;
+    top: 18px;
+}
+
+.fix-right-v3 .sidebar-item .popup i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin: -5px -10px 0 0;
+    font-size: 0;
+    border: 5px solid;
+    border-color: transparent transparent transparent #00ae66;
+    overflow: hidden;
+}
+
+.fix-right-v3 .sidebar-line {
+    width: 19px;
+    height: 1px;
+    margin: 7px auto;
+    background: #ccc;
+}
+
+.fix-right-v3 .sidebar-item {
+    position: relative;
+    margin: 7px 0;
+}
+
+.fix-right-v3 .myfav:hover>a {
+    background-position: 0 0;
+}
+
+.fix-right-v3 .myfav>a {
+    background-position: -38px 0;
+}
+
+.fix-right-v3 .myfav>a,
+.fix-right-v3 .myfav span {
+    height: 38px;
+    line-height: 38px;
+}
+
+.fix-right-v3 .sidebar-item>a {
+    display: block;
+    width: 38px;
+    font-size: 0;
+    background-image: url(img/home/sidebar_spriteV5.png?v=modifyCompare);
+    background-image: -webkit-image-set(url(img/home/sidebar_spriteV5.png?v=modifyCompare) 1x, url(img/home/sidebar_spriteV5@2x.png?v=modifyCompare) 2x);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fix-right-v3 .sidebar-item .popup {
+    position: absolute;
+    right: 48px;
+    top: 0;
+    display: none;
+    padding: 0 14px;
+    color: #fff;
+    font-size: 12px;
+    background: #00ae66;
+    white-space: nowrap;
+}
+
+.fix-right-v3 .myfav>a,
+.fix-right-v3 .myfav span {
+    height: 38px;
+    line-height: 38px;
+}
+
+.fix-right-v3 .sell a {
+    background-position: -38px -88px;
+}
+
+.fix-right-v3 .sell a,
+.fix-right-v3 .sell span {
+    height: 50px;
+    line-height: 50px;
+}
+
+.fix-right-v3 .sidebar-item>a {
+    display: block;
+    width: 38px;
+    font-size: 0;
+    background-image: url(img/home/sidebar_spriteV5.png?v=modifyCompare);
+    background-image: -webkit-image-set(url(img/home/sidebar_spriteV5.png?v=modifyCompare) 1x, url(img/home/sidebar_spriteV5@2x.png?v=modifyCompare) 2x);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fix-right-v3 .download:hover a {
+    background-position: 0 -224px;
+}
+
+.fix-right-v3 .download a {
+    height: 38px;
+    background-position: -38px -224px;
+}
+
+.fix-right-v3 .download a,
+.fix-right-v3 .download span {
+    line-height: 38px;
+}
+
+.fix-right-v3 .gotop {
+    position: absolute;
+    bottom: 10px;
+}
+
+.fix-right-v3 .gotop a {
+    background-position: -38px -338px;
+}
+
+.fix-right-v3 .gotop a,
+.fix-right-v3 .gotop span {
+    height: 38px;
+    line-height: 38px;
+}
+
+.fix-right-v3 .sidebar-item .popup {
+    position: absolute;
+    right: 48px;
+    top: 0;
+    display: none;
+    padding: 0 14px;
+    color: #fff;
+    font-size: 12px;
+    background: #00ae66;
+    white-space: nowrap;
+}
+
+.fix-right-v3 .gotop a,
+.fix-right-v3 .gotop span {
+    height: 38px;
+    line-height: 38px;
+}
