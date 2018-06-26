@@ -16,26 +16,784 @@
 </head>
 
 <body>
-    <header class="list-header">
-
+    <header class="common-header">
+        <!-- nav-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logo">WinningInvestment
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Rent</a>
+                </li>
+                <li>
+                    <a href="list.html">ListPage</a>
+                </li>
+                <li>
+                    <a href="detail.html">DetailPage</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+            </ul>
+        </nav>
+        <!--  end of nav-->
     </header>
-    <section class="fliter">
+    <section class="filter">
         <div class="filter--container">
-            <div>
-                <form action="#" class="filter--search">
-                    <input type="text" class="filter--search__input" placeholder="Search hotels">
-                    <button class="filter--search__button">
-                        <svg class="filter--search__icon">
+            <div class="filter--search">
+                <figure class="filter--icon">
+                    <img src="img/logo1.png">
+                </figure>
+                <form action="#" class="filter__search">
+                    <input type="text" class="filter__search__input" placeholder="Search hotels">
+                    <button class="filter__search__button">
+                        <svg class="filter__search__icon">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
                 </form>
             </div>
             <div class="filter--selectors">
+                <div class="selector--item">
+                    <h2 class="selector--item--location">选择位置</h2>
+                    <div class="selector--item--details">
+                        <div class="selector--item--details__title">
+                            <a class="">按区域
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <a class="">按火车线
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div class="selector--item--details__content">
+                            <div class="selector--item--details__content__line">
+                                <a href="" class="selector--item--details__content__line--name">1号线</a>
+                                <a href="" class="selector--item--details__content__line--name">2号线</a>
+                                <a href="" class="selector--item--details__content__line--name">三号线</a>
+                                <a href="" class="selector--item--details__content__line--name">四号线</a>
+                                <a href="" class="selector--item--details__content__line--name">五号线</a>
+                                <a href="" class="selector--item--details__content__line--name">六号线</a>
+                                <a href="" class="selector--item--details__content__line--name">七号线</a>
+                                <a href="" class="selector--item--details__content__line--name">八号线</a>
+                                <a href="" class="selector--item--details__content__line--name">九号线</a>
+                                <a href="" class="selector--item--details__content__line--name">十号线</a>
+                            </div>
+                            <div class="selector--item--details__content__line--box">
+                                <div class="selector--item--details__content__line--box--border--1"></div>
+                                <div class="selector--item--details__content__line--box--border--2"></div>
+                                <div class="selector--item--details__content__line--box--border--2--content--1">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Wynyard</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--2">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name"> Central</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--3">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Rederfen</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--4">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Newtown</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--5">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Straithfield</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--6">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Burwood</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--7">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Ashfield</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--8">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Flemington</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--9">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Homebush</a>
+                                </div>
+                                <div class="selector--item--details__content__line--box--border--2--content--10">
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__circle circle"></a>
+                                    <a href="" class="selector--item--details__content__line--box--border--2--content__name">Lidcombe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selector--item">
+                    <div class="selector--item--1">
+                        <div class="selector--item--1__title">
+                            <h1>Price(per/week)</h1>
+                            <form>
+                                <input type="text" placeholder="0">
+                                <input type="text" placeholder="2000">
+                            </form>
+                        </div>
+                        <div class="selector--item--1__content">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="selector--item--2">
+                        <div class="selector--item--2__title">
+                            <h1>Room</h1>
+                            <form>
+                                <input type="text" placeholder="0">
+                                <input type="text" placeholder="2000">
+                            </form>
+                        </div>
+                        <div class="selector--item--2__content">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="selector--item--3">
+                        <div class="selector--item--3__title">
+                            <h1>Bathroom</h1>
+                            <form>
+                                <input type="text" placeholder="0">
+                                <input type="text" placeholder="2000">
+                            </form>
+                        </div>
+                        <div class="selector--item--3__content">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selector--item">
+                    <a class="selector--item--option">
+                        <h5>Property Type</h5>
+                        <span>
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <a class="selector--item--option">
+                        <h5>Parking</h5>
+                        <span>
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <a class="selector--item--option">
+                        <h5>Availabel Date</h5>
+                        <span>
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="selector--item">
+                    <h2 class="selector--item--result">
+                        共找到
+                        <span>120</span>个房源
+                    </h2>
+                </div>
+                <div class="selector--item">
+                    <ul class="selector--item--order">
+                        <h2>Order:</h2>
+                        <li>
+                            <a>Default
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a>Price
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a>Date
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="selector--item--properties">
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
 
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                    <div class="selector--item--property">
+                        <div class="selector--item--property--img">
+                            <img src="img/house-1.jpeg">
+                        </div>
+                        <div class="selector--item--property--details">
+                            <div class="selector--item--property--details--title">
+                                <h2>$640 per week</h2>
+                                <h5>9/32 Rainbow Street, Kingsford, NSW 2032</h5>
+                            </div>
+                            <div class="selector--item--property--details--feature">
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bed"></i>
+                                </a>
+                                <a>
+                                    <span>2</span>
+                                    <i class="fas fa-bath"></i>
+                                </a>
+                                <a>
+                                    <span>1</span>
+                                    <i class="fas fa-car"></i>
+                                </a>
+                            </div>
+                            <div class="selector--item--property--details--surrounding">
+                                <div class="selector--item--property--details--surrounding__content">
+                                    <a>
+
+                                        <i class="fas fa-subway"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-bus"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-school"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-hospital-alt"></i>
+                                    </a>
+                                    <a>
+
+                                        <i class="fas fa-utensils"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="heart--favorite">
+
+                            <i class="fas fa-heart"></i>
+                        </a>
+
+                        <a class="property--detail">Details
+                            <span>
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <ul class="footer--nav">
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Find your dream home</a>
+            </li>
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Request proposal</a>
+            </li>
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Download home planner</a>
+            </li>
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Contact us</a>
+            </li>
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Submit your property</a>
+            </li>
+            <li class="footer--nav__item">
+                <a href="#" class="footer--nav__link">Come work with us!</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; Copyright 2018 by WinningInvestment Co.
+        </p>
+    </footer>
 </body>
 
 </html>
